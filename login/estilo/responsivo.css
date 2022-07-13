@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 950px) {
+    #lado-direito #area-login {
+        width: 85%;
+        max-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+       flex-direction: column;
+    }
+
+    #lado-esquerdo > h1 {
+        display: none;
+    }
+
+    main #lado-esquerdo {
+        width: 100%;
+        height: auto;
+    }
+
+    main #lado-direito {
+        width: 100%;
+        height: auto;
+    }
+
+    #lado-esquerdo img {
+        width: 50vw;
+    }
+}

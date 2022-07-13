@@ -1,0 +1,68 @@
+@charset "UTF-8"; 
+
+@media screen and (max-width: 1150px) {
+    nav {
+        position: relative;
+    }
+    nav #menu {
+         display: none;
+    }
+    nav #logo {
+        margin: 0px;
+        text-align: center;
+    }
+    #logo h1 {
+        font-size: 45px;
+    }
+
+    header {
+        padding-top: 50px;
+        margin-bottom: 450px;
+    }
+    header #header-texto {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+    header p {
+        text-align: center;
+    }
+    header #header-img {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    section .card {
+        width: 100%;
+    }
+
+    #whatsapp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    header {
+        margin-bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header {
+        display: block;
+    }
+    header #titulo1 {
+        letter-spacing: 8px;
+        font-size: 5vw;
+        text-align: center;
+    }
+    header #titulo2 {
+        font-size: 16vw;
+        text-align: center;
+    }
+    section h2 {
+        font-size: 10vw;
+    }
+
+}
