@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@media screen and (max-height: 620px) {
+    div#img-ilus {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    header > #area-texto > h1 {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    header > #area-img > img {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    nav > #nav {
+        display: none;
+    }
+
+    nav > #logo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#img-ilus {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    header > #area-texto > h1 {
+        font-size: 2em;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > #area-texto > p {
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > #area-texto > button {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    div#redes-sociais {
+        display: inline;
+    }
+}

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (min-height: 620px) {
+    #img-ilus img {
+        top: 0;
+    }
+}
