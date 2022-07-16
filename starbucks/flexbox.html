@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .caixa {
+            max-width: 500px;
+            height: 200px;
+            margin: auto;
+            border: 1px solid black;
+
+            display: flex;
+
+            flex-direction: row;
+            /* Direção dos itens flex:
+            flex-direction: column; -> coluna
+            flex-direction: row; -> linha
+            flex-direction: colunm-reverse; -> coluna invertida
+            flex-direction: row-reverse; -> linha invertida */
+
+            flex-wrap: wrap;
+            /* Flex Wrap é a quebra itens dentro de uma caixa:
+            flex-wrap: no-wrap; -> (Padrao) Não quebra linha
+            flex-wrap: wrap; -> Quebra linha */
+
+            flex-flow: row wrap;
+            /* Flex-Flow junta as propriedade flex-direction e flex-wrap
+            em uma só propriedade. serve como uma shorthand */
+
+            justify-content: center; /* Alinha a horizontal */
+            /* Justify-Content alinha os itens dentro da uma caixa em horizontal:
+            justify-content: flex-start; -> (Padrão) Alinha o item ao começo da caixa (esquerda)
+            justify-content: center; -> Alinha o item ao centro da caixa
+            justify-content: flex-end; -> Alinha o item ao final da caixa (direita)
+            justify-content: space-between; -> Cria um espaçamento entre os itens de forma igual onde o primeiro item começa no flex-start e o ultimo no flex-end.
+            justify-content: space-around; -> Cria um espaçamento entre os itens de forma igual*/
+
+            /* align-items: ; /* Alinha a vertical */
+            /* Align-Items alinha os itens dentro da uma caixa em vertical:
+            align-items: stretch; (Padrão)
+            align-items: flex-start; -> Alinha o item ao começo da caixa (esquerda)
+            align-items: center; -> Alinha o item ao centro da caixa
+            align-items: flex-end; -> Alinha o item ao final da caixa (direita) */ 
+            
+            align-content: center; /* Alinha a vertical */
+            /* Align Content centreliza da mesma forma do align-items com uma única diferença que não os itens não vão possuir espaçamentos entre si.
+            align-content: space-between; -> Cria um espaçamento entre os itens de forma igual onde o primeiro item começa no flex-start e o ultimo no flex-end.
+            align-content: space-around; -> Cria um espaçamento entre os itens de forma igual */
+        }
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            background-color: brown;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+            /* width: calc(33.3333% - 20px); /* A função calc calcula medidas em css, nesse caso esta sendo usado para tirar o padding e margin que esta dentro da class item, que são 10px (5px da esquerda e 5px da direita) de cada e 20px dos dois. */
+
+            width: 200px;
+        }
+
+        .grow {
+            flex-grow: 1;
+            /* Flex-Grow é uma propriedade de item e quando o maior o valor de flex-grow, mais espaço eu vai está dando dentro da caixa.
+            flex-grow: 0 (Padrão) */
+        }
+
+        .order {
+            order: 0;
+            /* Order é um propriedade que mostra as ordem dos elementos (itens), quanto menor o valor tem maior a prioridade.
+            order: 0; (Padrão) */
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <div class="item grow">Item 1</div>
+        <div class="item grow">Item 2</div>
+        <div class="item grow">Item 3</div>
+        <div class="item grow">Item 4</div>
+        <!-- <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div> -->
+    </div>
+</body>
+</html>
